@@ -75,3 +75,4 @@ C:\Users\Nacho\Documents\GitHub\BranchIverasay\Creditinfo\CreditInfoSolution\Cre
 C:\Users\Nacho\Documents\GitHub\BranchIverasay\Creditinfo\CreditInfoSolution\CreditInfoAPI\obj\Debug\CreditInfoAPI.pdb
 C:\Users\Nacho\Documents\GitHub\BranchIverasay\Creditinfo\CreditInfoSolution\CreditInfoAPI\obj\Debug\CreditInfoAPI.Migrations.Firstapproach.resources
 C:\Users\Nacho\Documents\GitHub\BranchIverasay\Creditinfo\CreditInfoSolution\CreditInfoAPI\obj\Debug\CreditInfoAPI.csproj.GenerateResource.Cache
+C:\Users\Nacho\Documents\GitHub\BranchIverasay\Creditinfo\CreditInfoSolution\CreditInfoAPI\obj\Debug\CreditInfoAPI.csprojResolveAssemblyReference.cache
