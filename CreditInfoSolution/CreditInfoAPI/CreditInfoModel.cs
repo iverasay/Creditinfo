@@ -1,6 +1,7 @@
 ﻿namespace CreditInfoAPI
 {
     using System;
+    using System.Collections.Generic;
     using System.Data.Entity;
     using System.Linq;
 
@@ -25,7 +26,8 @@
          public virtual DbSet<Individual> Individuals { get; set; }
          public virtual DbSet<IdentificationNumber> IdentificationNumbers { get; set; }
          public virtual DbSet<SubjectRole> SubjectRoles { get; set; }
-         public virtual DbSet<GuaranteeAmount> GuaranteeAmounts { get; set; }
+         public virtual DbSet<Amount> Amounts { get; set; }
+         public virtual DbSet<ContractData> ContractDatas { get; set; }
     }
 
     //public class MyEntity
@@ -38,13 +40,9 @@
     {
         public int Id { get; set; }
         public string ContractCode { get; set; }
-        public Individual Ind1 { get; set; }
-        public Individual Ind2 { get; set; }
-        public Individual Ind3 { get; set; }
-        public SubjectRole SR1 { get; set; }
-        public SubjectRole SR2 { get; set; }
-        public SubjectRole SR3 { get; set; }
-
+        public List<ContractData> ContractsData { get; set; }
+        public List<Individual> Individuals { get; set; }
+        public List<SubjectRole> SubjectRoles { get; set; }
     }
 
     public class Individual
@@ -56,6 +54,7 @@
         public string Gender { get; set; }
         public DateTime DateOfBirth { get; set; }
         public IdentificationNumber IdN { get; set; }
+        public List<Contract> Contracts { get; set; }
 
     }
 
@@ -69,20 +68,33 @@
     public class SubjectRole
     {
         public int Id { get; set; }
-        public string ContractCode { get; set; }
-        public int RoleOfCustomer { get; set; }
-        public GuaranteeAmount Guarantee { get; set; }
+        public string CustomerCode { get; set; }
+        public string RoleOfCustomer { get; set; }
+        public Amount Guarantee { get; set; }
 
     }
 
-    public class GuaranteeAmount
+    public class Amount
     {
         public int Id { get; set; }
         public float Value { get; set; }
-        public int Currency { get; set; }
+        public string Currency { get; set; }
 
     }
 
+    public class ContractData
+    {
+        public int Id { get; set; }
+        public string PhaseOfContract { get; set; }
+        public Amount OriginalAmount { get; set; }
+        public Amount InstallmentAmount { get; set; }
+        public Amount CurrentBalance { get; set; }
+        public Amount OverdueBalance { get; set; }
+        public DateTime DateOfLastPayment { get; set; }
+        public DateTime NextPaymentDate { get; set; }
+        public DateTime DateAccountOpened { get; set; }
+        public DateTime RealEndDate { get; set; }
+    }
 
 
 }

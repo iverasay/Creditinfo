@@ -189,7 +189,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\BundleConfig.cs" />
@@ -235,7 +234,28 @@
     <Compile Include="Migrations\202001031249054_First approach.designer.cs">
       <DependentUpon>202001031249054_First approach.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202001031442139_addContractData.cs" />
+    <Compile Include="Migrations\202001031442139_addContractData.designer.cs">
+      <DependentUpon>202001031442139_addContractData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202001031455140_ChangesInContract.cs" />
+    <Compile Include="Migrations\202001031455140_ChangesInContract.designer.cs">
+      <DependentUpon>202001031455140_ChangesInContract.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202001031518318_ChangesInIndividuals.cs" />
+    <Compile Include="Migrations\202001031518318_ChangesInIndividuals.designer.cs">
+      <DependentUpon>202001031518318_ChangesInIndividuals.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202001031539386_ChangesInContracts.cs" />
+    <Compile Include="Migrations\202001031539386_ChangesInContracts.designer.cs">
+      <DependentUpon>202001031539386_ChangesInContracts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202001031620355_ChangesInSubjectRol&amp;Amount.cs" />
+    <Compile Include="Migrations\202001031620355_ChangesInSubjectRol&amp;Amount.designer.cs">
+      <DependentUpon>202001031620355_ChangesInSubjectRol&amp;Amount.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Models\DetailMethodResultViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -307,6 +327,21 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202001031249054_First approach.resx">
       <DependentUpon>202001031249054_First approach.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202001031442139_addContractData.resx">
+      <DependentUpon>202001031442139_addContractData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202001031455140_ChangesInContract.resx">
+      <DependentUpon>202001031455140_ChangesInContract.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202001031518318_ChangesInIndividuals.resx">
+      <DependentUpon>202001031518318_ChangesInIndividuals.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202001031539386_ChangesInContracts.resx">
+      <DependentUpon>202001031539386_ChangesInContracts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202001031620355_ChangesInSubjectRol&amp;Amount.resx">
+      <DependentUpon>202001031620355_ChangesInSubjectRol&amp;Amount.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
